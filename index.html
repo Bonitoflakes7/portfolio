@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <title>Abhishek Dev | Portfolio</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23050505'/%3E%3Ctext x='50%25' y='55%25' text-anchor='middle' font-family='Arial,sans-serif' font-size='34' font-weight='800' fill='%23f5f5f5'%3EA%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class="site grain" data-testid="app-root">
+    <header class="nav" data-testid="main-nav">
+      <div class="nav-inner">
+        <button class="logo" data-target="hero" data-testid="logo-btn">ABHISHEK <span>®</span></button>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <button data-target="about" data-testid="nav-about">About</button>
+          <button data-target="projects" data-testid="nav-projects">Work</button>
+          <button data-target="path" data-testid="nav-path">Path</button>
+          <button data-target="thoughts" data-testid="nav-thoughts">Thoughts</button>
+          <button data-target="contact" data-testid="nav-contact">Contact</button>
+        </nav>
+        <a class="resume" href="https://drive.google.com/uc?export=download&id=1JFp9sP68vw4ti2xTGxwZMolBox2OelqM"
+          target="_blank" rel="noreferrer" data-testid="nav-resume-btn">
+          Resume <span>履歴書</span>
+        </a>
+        <button class="menu-btn" aria-expanded="false" aria-controls="mobile-menu"
+          data-testid="mobile-menu-btn">Menu</button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <button data-target="about">About</button>
+        <button data-target="projects">Work</button>
+        <button data-target="path">Path</button>
+        <button data-target="thoughts">Thoughts</button>
+        <button data-target="contact">Contact</button>
+        <a href="https://drive.google.com/uc?export=download&id=1JFp9sP68vw4ti2xTGxwZMolBox2OelqM" target="_blank"
+          rel="noreferrer">Resume 履歴書</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section-live" data-testid="hero-section">
+        <div class="hero-image" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1770896687186-895de50a4123?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwxfHxjaW5lbWF0aWMlMjBkYXJrJTIwcG9ydHJhaXQlMjBtYW4lMjBwcm9maWxlfGVufDB8fHx8MTc3OTMwMzYyNnww&ixlib=rb-4.1.0&q=85"
+            alt="" />
+        </div>
+        <div class="hero-meta">
+          <div>
+            <span>© Portfolio <b>ポートフォリオ</b></span>
+            <span>Backend & AI Developer — <b>開発者</b></span>
+          </div>
+          <div class="time-block">
+            <span>IDX/01 — Bangalore, IN</span>
+            <span id="clock">23:32 <b>時間</b></span>
+          </div>
+        </div>
+        <div class="hero-content">
+          <div class="micro-line"><i></i><span>WDX® — 開発者</span></div>
+          <h1 data-testid="hero-name"><span>ABHISHEK</span><span>DEV<sup>★</sup></span></h1>
+          <div class="hero-bottom">
+            <p>Building backends that hold up under pressure.</p>
+            <div class="scroll-cue"><i></i><span>Scroll <b>下へ</b></span></div>
+          </div>
+        </div>
+        <div class="section-count">01 / 08 — Hero</div>
+      </section>
+
+      <section id="about" class="about split-section reveal" data-testid="about-section">
+        <aside class="section-label">
+          <div><i></i><span>02 / About</span></div>
+          <p>について</p>
+        </aside>
+        <div class="about-copy">
+          <h2>I turn rough ideas into <span class="shade">polished systems</span> that feel fast, reliable, and
+            genuinely useful.<span class="arrow">⟶</span></h2>
+          <div class="copy-grid">
+            <p data-testid="about-paragraph-0">I enjoy building software that makes people ask, 'wait… you actually made
+              this?'</p>
+            <p data-testid="about-paragraph-1">I work on backend systems, AI applications, automation pipelines, and
+              developer-focused products using Python, Go, APIs, databases, and cloud technologies. My projects range
+              from AI workflow systems and debugging assistants to scalable SaaS platforms designed for real-world
+              usage.</p>
+            <p data-testid="about-paragraph-2">What excites me most is turning rough ideas into polished systems that
+              feel fast, reliable, and genuinely useful.</p>
+            <p data-testid="about-paragraph-3">I'm not here to stack unfinished side projects. I'm here to build
+              products with real architecture, real users, and real impact.</p>
+          </div>
+          <div class="ticker-note">— Based in Bangalore, IN <span>·</span> Currently building backend services
+            <span>·</span> <b>作っている</b>
+          </div>
+        </div>
+      </section>
+
+      <section id="stack" class="stack reveal" data-testid="stack-section">
+        <div class="wide-head">
+          <span>03 / Stack</span>
+          <h2>The tools I bend to my will.<b>道具</b></h2>
+          <em>34 Technologies</em>
+        </div>
+        <div class="marquee-row">
+          <div class="marquee marquee-a" data-tech-row="primary"></div>
+        </div>
+        <div class="marquee-row muted">
+          <div class="marquee marquee-b" data-tech-row="secondary"></div>
+        </div>
+        <p class="stack-footer">— Always learning. Often breaking. <b>学び続ける</b></p>
+      </section>
+
+      <section id="projects" class="projects reveal" data-testid="projects-section">
+        <div class="giant-marquee" aria-hidden="true">
+          <div>@ Featured Projects <b>プロジェクト</b> ✦ @ Featured Projects <b>プロジェクト</b> ✦ @ Featured Projects <b>プロジェクト</b>
+            ✦</div>
+        </div>
+        <div class="project-head">
+          <span>04 / Featured Work</span>
+          <p>3 Selected · 三作品</p>
+        </div>
+        <div class="project-list">
+          <a class="project-card" href="https://graphchat-gpwqeatrbukjrnt6fpuho9.streamlit.app/" target="_blank"
+            rel="noopener noreferrer" data-testid="project-card-graphchat">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1764258560730-d167e5deda65?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwzfHxkYXJrJTIwYWJzdHJhY3QlMjB0ZWNobm9sb2d5JTIwbGluZXN8ZW58MHx8fHwxNzc5MzAzNjMxfDA&ixlib=rb-4.1.0&q=85"
+                alt="GraphChat" />
+              <span>01 · Live</span>
+            </div>
+            <div class="project-info">
+              <div class="project-num">01 <b>グラフチャット</b></div>
+              <h3>GraphChat</h3>
+              <h4>Natural language knowledge graph assistant</h4>
+              <p>Built an AI chatbot that converts natural language into Cypher queries using LangChain and Llama 3.3
+                70B via Groq.</p>
+              <div class="chips"><span>Python</span><span>Neo4j</span><span>LangChain</span><span>Groq
+                  API</span><span>Streamlit</span><span>Cypher</span></div>
+              <strong>View Live ↗</strong>
+            </div>
+          </a>
+          <a class="project-card reverse" href="https://github.com/Bonitoflakes7/Bug_vision" target="_blank"
+            rel="noopener noreferrer" data-testid="project-card-devmind">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1753998943413-8cba1b923c0e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwxfHxkYXJrJTIwY29kZSUyMG1vbml0b3IlMjBzY3JlZW58ZW58MHx8fHwxNzc5MzAzNjMxfDA&ixlib=rb-4.1.0&q=85"
+                alt="DevMind" />
+              <span>02 · Live</span>
+            </div>
+            <div class="project-info">
+              <div class="project-num">02 <b>デブマインド</b></div>
+              <h3>DevMind</h3>
+              <h4>RAG-powered debugging assistant</h4>
+              <p>Built an offline AI debugging assistant combining OCR, local LLM inference, and RAG-based code
+                retrieval.</p>
+              <div class="chips">
+                <span>Python</span><span>LangChain</span><span>ChromaDB</span><span>Ollama</span><span>Mistral</span><span>OCR</span>
+              </div>
+              <strong>View Live ↗</strong>
+            </div>
+          </a>
+          <a class="project-card" href="https://dineos-dun.vercel.app/login" target="_blank" rel="noopener noreferrer"
+            data-testid="project-card-dineos">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1762278804821-0dbf2b16ddaf?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzN8MHwxfHNlYXJjaHwxfHxkYXJrJTIwYWJzdHJhY3QlMjB0ZWNobm9sb2d5JTIwbGluZXN8ZW58MHx8fHwxNzc5MzAzNjMxfDA&ixlib=rb-4.1.0&q=85"
+                alt="DineOS" />
+              <span>03 · Live</span>
+            </div>
+            <div class="project-info">
+              <div class="project-num">03 <b>ダインオーエス</b></div>
+              <h3>DineOS</h3>
+              <h4>Restaurant management SaaS</h4>
+              <p>Multi-tenant restaurant management SaaS with QR ordering, role-based workflows, analytics dashboards,
+                and real-time kitchen synchronization.</p>
+              <div class="chips">
+                <span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>Tailwind</span><span>React
+                  Query</span>
+              </div>
+              <strong>View Live ↗</strong>
+            </div>
+          </a>
+        </div>
+        <div class="other-projects">
+          <div class="other-title">— Other Projects <b>More things I've made.<span>他</span></b></div>
+          <a href="https://attractive-playfulness-production-ccf3.up.railway.app/" target="_blank"
+            rel="noopener noreferrer" data-testid="other-project-0"><span>01</span>TeamFlow<i>↗</i></a>
+          <a href="https://stock-predictorapp.streamlit.app/" target="_blank" rel="noopener noreferrer"
+            data-testid="other-project-1"><span>02</span>Stock Market
+            Prediction App<i>↗</i></a>
+          <a href="https://github.com/Bonitoflakes7/crm_ai_assistant" target="_blank" rel="noopener noreferrer"
+            data-testid="other-project-2"><span>03</span>AI
+            CRM Assistant<i>↗</i></a>
+          <a href="https://github.com/Bonitoflakes7/ai_marketplace_backend" target="_blank" rel="noopener noreferrer"
+            data-testid="other-project-3"><span>04</span>AI Prompt Marketplace<i>↗</i></a>
+          <a href="https://github.com/Bonitoflakes7/guesture_tracker" target="_blank" rel="noopener noreferrer"
+            data-testid="other-project-4"><span>05</span>Gesture Tracker<i>↗</i></a>
+          <a href="https://github.com/Bonitoflakes7/autoagent" target="_blank" rel="noopener noreferrer"
+            data-testid="other-project-5"><span>06</span>AutoAgent<i>↗</i></a>
+        </div>
+      </section>
+
+      <section id="path" class="path split-section reveal" data-testid="path-section">
+        <aside class="section-label">
+          <div><i></i><span>05 / Path</span></div>
+          <p>経歴</p>
+        </aside>
+        <div class="timeline">
+          <h2>Experience<b>経験</b></h2>
+          <div class="timeline-item" data-testid="experience-0">
+            <span>Dec 2025 — Present</span>
+            <div>
+              <h3>Backend Developer Intern</h3>
+              <h4>Comixcanal · Startup · Remote</h4>
+              <p>Developing production-grade backend services using Golang and Python for internal and external
+                integrations.</p>
+            </div>
+            <em>Current</em>
+          </div>
+          <h2>Education<b>学歴</b></h2>
+          <div class="timeline-item" data-testid="education-0">
+            <span>2025 — 2027</span>
+            <div>
+              <h3>Master of Computer Application — Artificial Intelligence</h3>
+              <h4>Jain University</h4>
+              <p>Bangalore, Karnataka</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-testid="education-1">
+            <span>2022 — 2025</span>
+            <div>
+              <h3>Bachelor of Computer Application — Data Science</h3>
+              <h4>CMR University</h4>
+              <p>CGPA 8.45 · 6th Rank Holder</p>
+              <p>Bangalore, Karnataka</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="thoughts" class="thoughts reveal" data-testid="thoughts-section">
+        <div class="wide-head">
+          <span>06 / Thoughts</span>
+          <h2>Field notes from building.<b>思考</b></h2>
+        </div>
+        <div class="notes">
+          <article>
+            <div class="avatar">A</div>
+            <div>
+              <h3>Abhishek Dev</h3>
+              <p>@BONITOFLAKES · #PRODUCT</p>
+            </div>
+            <span>NOTE/01</span>
+            <blockquote>“The moment users stop noticing the technology and start trusting it, the product wins.”
+            </blockquote>
+            <footer>— ABHISHEK <b>考え</b></footer>
+          </article>
+          <article>
+            <div class="avatar">A</div>
+            <div>
+              <h3>Abhishek Dev</h3>
+              <p>@BONITOFLAKES · #AI</p>
+            </div>
+            <span>NOTE/02</span>
+            <blockquote>“AI becomes valuable when it quietly integrates into workflows instead of demanding attention.”
+            </blockquote>
+            <footer>— ABHISHEK <b>考え</b></footer>
+          </article>
+          <article>
+            <div class="avatar">A</div>
+            <div>
+              <h3>Abhishek Dev</h3>
+              <p>@BONITOFLAKES · #SYSTEMS</p>
+            </div>
+            <span>NOTE/03</span>
+            <blockquote>“Infrastructure is invisible until it fails. That's why I enjoy building it properly.”
+            </blockquote>
+            <footer>— ABHISHEK <b>考え</b></footer>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact reveal" data-testid="contact-section">
+        <div class="contact-marquee" aria-hidden="true">
+          <div>Get in Touch <b>連絡しよう</b> ✦ Get in Touch <b>連絡しよう</b> ✦ Get in Touch <b>連絡しよう</b> ✦</div>
+        </div>
+        <div class="contact-grid">
+          <aside class="section-label">
+            <div><i></i><span>07 / Contact</span></div>
+            <p>連絡先</p>
+          </aside>
+          <div>
+            <h2>Let's build<br />something real.<b>作ろう</b></h2>
+            <p>I'm open to backend engineering roles, AI/ML collaborations, and ambitious product builds. Drop a line —
+              I reply quickly.</p>
+            <div class="contact-actions">
+              <a href="mailto:abhishekdevqwio7@gmail.com">Send me an email</a>
+              <a href="https://drive.google.com/uc?export=download&id=1JFp9sP68vw4ti2xTGxwZMolBox2OelqM" target="_blank"
+                rel="noreferrer">Download Resume <span>履歴書</span></a>
+            </div>
+            <div class="contact-links">
+              <a href="mailto:abhishekdevqwio7@gmail.com"><span>Email <b>メール</b></span>abhishekdevqwio7@gmail.com</a>
+              <a href="https://www.linkedin.com/in/abhishekdev7" target="_blank"
+                rel="noopener noreferrer"><span>LinkedIn <b>リンクト</b></span>/in/abhishekdev7</a>
+              <a href="https://github.com/Bonitoflakes7" target="_blank" rel="noopener noreferrer"><span>GitHub
+                  <b>ギット</b></span>@Bonitoflakes7</a>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <span>© 2026 Abhishek Dev. Built with quiet obsession.<b>作品</b></span>
+          <span>WDX® / 08 / End <b>終</b></span>
+        </footer>
+      </section>
+    </main>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
